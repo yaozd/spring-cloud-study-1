@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zhaoyibo/spring-cloud-study
+          uri: https://github.com/yaozd/spring-cloud-study-1
           search-paths: config-repo
 server:
   port: 12000
