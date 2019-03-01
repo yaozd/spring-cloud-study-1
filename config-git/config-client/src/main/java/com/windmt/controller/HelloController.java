@@ -19,8 +19,17 @@ public class HelloController {
     @Value("${info.profile:error}")
     private String profile;
 
+    @Value("${yzd.profile:error}")
+    private String yzdProfile;
+
     @GetMapping("/info")
     public Mono<String> hello() {
-        return Mono.justOrEmpty(profile);
+        String txt="info.profile="+profile;
+        return Mono.justOrEmpty(txt);
+    }
+    @GetMapping("/yzdinfo")
+    public Mono<String> yzdInfo() {
+        String txt="yzd.profile="+yzdProfile;
+        return Mono.justOrEmpty(txt);
     }
 }

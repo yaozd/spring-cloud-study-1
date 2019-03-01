@@ -6,6 +6,6 @@ spring:
       server:
         git:
           uri: https://github.com/yaozd/spring-cloud-study-1
-          search-paths: config-repo
+          search-paths: 'config-repo,{application}'
 server:
   port: 12000
