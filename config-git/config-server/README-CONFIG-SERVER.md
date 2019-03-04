@@ -1,3 +1,6 @@
+> 使用场景--特别重要
+- [详解spring cloud config实现datasource的热部署](https://www.jb51.net/article/132978.htm)
+
 > 验证地址
 1. 服务器端：
     - [http://localhost:12000/config-client,config/dev](http://localhost:12000/config-client,config/dev)
@@ -32,3 +35,6 @@ http://localhost:12000/config-client,config/dev
 ---
 config-client,config 代表配置文件的名称
 ```
+
+> 问题参考：
+- [注意！@RefreshScope和 @Configuration在同一类上使用有冲突](https://www.jianshu.com/p/35172d7cb157)
